@@ -32,6 +32,8 @@ background: linear-gradient(90deg, rgba(25,100,80,1) 0%, rgba(255,0,0,1) 0%, rgb
 	 color: aliceblue;
 	 width: 100%;
  }
+ 
+
  #dashboard div {
 	 display: inline-block;
 	 margin: 10px;
