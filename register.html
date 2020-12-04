@@ -1,0 +1,107 @@
+<!doctype html>
+<html dir="ltr">
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/slick.css">
+		<link rel="stylesheet" href="css/slick-theme.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="fonts/css/all.min.css">
+	</head>
+	
+	<body>
+	
+	 <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+			<a class="navbar-brand" href="index.html"> <i class="fab fa-xbox"></i>Xgames</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+		  
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav mr-auto">
+				
+				<li class="nav-item">
+				  <a class="nav-link" href="#"> <i class="fas fa-gamepad"></i>Companys</a>
+				</li>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2 bg-dark" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0 bg-dark" type="submit">Search</button>
+				  </form>
+				
+				<li class="nav-item ">
+					<a class="nav-link " href="login.html">Login</a>
+				  </li>
+				<li class="nav-item ">
+				  <a class="nav-link  " href="register.html">Register</a>
+				</li>
+			  </ul>
+			  
+			</div>
+		  </nav>
+	
+		<section class="container ">
+			<h1> Registeration </h1>
+			<form  id="register-form">
+			
+				
+				<label class="" >Your Name in Arabic</label>
+				<input class="bg-dark" type="text" name="name_ar" placeholder="أحمد" pattern="^[\u0621-\u064A ]+$" title="your name must be in Arabic character only" data-toggle="tooltip"  autocomplete="on" autofocus   >
+				
+
+				<label>Your Name in English</label>
+				<i class="fas fa-mobile-alt"></i>
+				<input class="bg-dark"type="text" name="name_en" placeholder="ahmed" pattern="^[a-zA-Z ]+$" title="your name must be in English character only" autocomplete="on" >
+				
+				<label>Your Email</label>
+				<input class="bg-dark"type="text" name="email" placeholder="name@domain-name.com" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" title="your email must be like that name@domain-name.com" autocomplete="on" >
+				
+				<div class="form-group ">
+					<div class="row  ">
+						<select  name="country" class="form-control m-2 col-4" id="countryId">
+							<option value="">Select Country</option>
+						</select>
+						<select name="state" class="form-control m-2 col-4" id="stateId">
+							<option value="">Select State</option>
+						</select>
+						<select name="city" class="form-control m-2 col-3" id="cityId">
+							<option value="">Select City</option>
+						</select>
+					</div>
+				</div>
+
+				<label>Your Address</label>
+				<input class="bg-dark"type="text" name="address" placeholder="Country, State, City, Street" pattern="^([\u0621-\u064A0-9\-, ]{3,})|([a-zA-Z0-9\-, ]{3,})+$" title="your address must be in English or Arabic characters only and at least 3 characters" autocomplete="on" >
+
+				<label>Your Phone</label>
+				<input class="bg-dark" type="text" name="phone" placeholder="+201..." pattern="^\+?\d{10,}$" title="your phone must be at least 10 digits" autocomplete="on" >
+
+				<label>Your Password</label>
+				<input  class="bg-dark"type="password" name="password" placeholder="at least 8 characters" pattern="^.{8,}$" title="your password must be 8 caharacters at least" autocomplete="on" >
+
+				<label>Confirm Password</label>
+				<input  class="bg-dark"type="password" name="confirm-password" placeholder="the same as password" pattern="^.{8,}$" title="confirm password must match the password" autocomplete="on" >
+
+				<input class="bg-dark"type="checkbox" name="agree"title="you should agree all terms" >
+				<a href="#"> I agree all terms  </a>
+
+				<input type="submit" value="Register" title="Can't Register" data-content="you should match all validation first">
+			
+			</form>
+			
+			
+			
+			
+		</section>
+	
+	
+		
+		<script src="js/jquery-3.5.1.min.js" ></script>
+		<script src="js/popper.min.js" ></script>
+		<script src="js/slick.min.js" ></script>
+		<script src="js/bootstrap.js" ></script>
+		<script src="js/Rscript.js" ></script>
+	</body>
+</html>

@@ -1,0 +1,73 @@
+body{
+	background: rgb(212,38,23);
+	background: linear-gradient(0deg, rgba(212,38,23,1) 0%, rgba(51,137,181,1) 100%);
+	/* background-image: url(../images/background.jpg);
+	background-size: cover; */
+	
+}
+
+h1{
+	color: gold;
+}
+h2{
+	color: darkorange;
+}
+.dropdown-item{
+	color: darkorange;
+}
+nav{
+	
+
+	background: rgb(25,100,80);
+background: linear-gradient(90deg, rgba(25,100,80,1) 0%, rgba(255,0,0,1) 0%, rgba(11,32,209,1) 46%, rgba(208,236,74,1) 100%);
+
+}
+.items img{
+	height: 200px;
+}
+.all img {
+	height: 200px;
+}
+ footer{
+	 color: aliceblue;
+	 width: 100%;
+ }
+ #dashboard div {
+	 display: inline-block;
+	 margin: 10px;
+	 width: 200px;
+	 height: 150px;
+	 border: solid rgb(11, 28, 182) ;
+	 border-radius: 10px; 
+	 padding: 20px;
+ }
+
+ #sidebar {
+	width: 20%;
+	background: rgb(11, 28, 182) ;
+	color: #fff;
+  }
+  #sidebar.active {
+	  width: 80px;
+	  text-align: center; 
+  }
+  
+  #sidebar ul li a {
+	padding: 10px 30px;
+	display: block;
+	color: gold;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+  }
+  
+  #sidebar.active ul.components li {
+	  font-size: 14px; 
+  }
+  
+  #sidebar.active ul.components li a {
+	  padding: 10px 0; 
+  }
+  
+  #sidebar.active ul.components li a i {
+	display: block;
+	font-size: 24px; 
+  }
