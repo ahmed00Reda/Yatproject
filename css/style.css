@@ -1,16 +1,32 @@
 body{
-	background: rgb(212,38,23);
-	background: linear-gradient(0deg, rgba(212,38,23,1) 0%, rgba(51,137,181,1) 100%);
+	/* background: rgb(212,38,23);
+	background: linear-gradient(0deg, rgba(212,38,23,1) 0%, rgba(51,137,181,1) 100%); */
 	/* background-image: url(../images/background.jpg);
 	background-size: cover; */
-	
+	/* background: url('../images/background.jpg'), fixed center no-repeat;
+    background-size: cover;
+	color: #FFFFFF; */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/background.jpg);
+
+    /* Set a specific height */
+    height: 100%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
 }
 
 h1{
-	color: gold;
+	color: white;
+	margin: 20px;
 }
-h2{
-	color: darkorange;
+h2,h3{
+	font-style: oblique;
+	color: white;
+	margin: 20px;
 }
 .dropdown-item{
 	color: darkorange;
@@ -18,9 +34,8 @@ h2{
 nav{
 	
 
-	background: rgb(25,100,80);
-background: linear-gradient(90deg, rgba(25,100,80,1) 0%, rgba(255,0,0,1) 0%, rgba(11,32,209,1) 46%, rgba(208,236,74,1) 100%);
-
+	background: rgb(236,29,29);
+background: linear-gradient(90deg, rgba(236,29,29,1) 0%, rgba(75,143,124,1) 29%, rgba(175,49,120,1) 66%, rgba(22,36,157,1) 100%);
 }
 .items img{
 	height: 200px;
@@ -39,37 +54,11 @@ background: linear-gradient(90deg, rgba(25,100,80,1) 0%, rgba(255,0,0,1) 0%, rgb
 	 margin: 10px;
 	 width: 200px;
 	 height: 150px;
-	 border: solid rgb(11, 28, 182) ;
+	 border: solid #ffffff ;
 	 border-radius: 10px; 
 	 padding: 20px;
+	 background-color: #343a40;
  }
+ 
 
- #sidebar {
-	width: 20%;
-	background: rgb(11, 28, 182) ;
-	color: #fff;
-  }
-  #sidebar.active {
-	  width: 80px;
-	  text-align: center; 
-  }
-  
-  #sidebar ul li a {
-	padding: 10px 30px;
-	display: block;
-	color: gold;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
-  }
-  
-  #sidebar.active ul.components li {
-	  font-size: 14px; 
-  }
-  
-  #sidebar.active ul.components li a {
-	  padding: 10px 0; 
-  }
-  
-  #sidebar.active ul.components li a i {
-	display: block;
-	font-size: 24px; 
-  }
+ 
