@@ -30,36 +30,25 @@
 					<input class="form-control mr-sm-2 bg-dark" type="search" placeholder="Search" aria-label="Search">
 					<button class="btn btn-outline-success my-2 my-sm-0 bg-dark" type="submit"><i class="fas fa-search"></i></button>
 				  </form>
-				  <li class="nav-item">
-					<a class="nav-link" href="admin.html"> Admin</a>
-				  </li>
-				
-				<li class="nav-item ">
-					<a class="nav-link " href="login.html">Login</a>
-				  </li>
-				<li class="nav-item ">
-				  <a class="nav-link  " href="register.html">Register</a>
-				</li>
+				  
 			  </ul>
 			  
 			</div>
 		  </nav>
 	
 		<section class="container ">
-			<h1> Registeration </h1>
-			<form  id="register-form">
-			
+			<h1 class="text-center m-3"> Registeration </h1>
+			<form  id="register-form" action="{{route('add_user')}}" method="post">
+			@scrf
 				
-				<label class="" >Your Name in Arabic</label>
-				<input class="bg-dark" type="text" name="name_ar" placeholder="أحمد" pattern="^[\u0621-\u064A ]+$" title="your name must be in Arabic character only" data-toggle="tooltip"  autocomplete="on" autofocus   >
 				
 
-				<label>Your Name in English</label>
-				<i class="fas fa-mobile-alt"></i>
-				<input class="bg-dark"type="text" name="name_en" placeholder="ahmed" pattern="^[a-zA-Z ]+$" title="your name must be in English character only" autocomplete="on" >
+				<label class = "text-light">Your Name </label>
 				
-				<label>Your Email</label>
-				<input class="bg-dark"type="text" name="email" placeholder="name@domain-name.com" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" title="your email must be like that name@domain-name.com" autocomplete="on" >
+				<input class=""type="text" name="name_en" placeholder="ahmed" pattern="^[a-zA-Z ]+$" title="your name must be in English character only" autocomplete="on" >
+				
+				<label class = "text-light">Your Email</label>
+				<input class=""type="text" name="email" placeholder="name@domain-name.com" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" title="your email must be like that name@domain-name.com" autocomplete="on" >
 				
 				<div class="form-group ">
 					<div class="row  ">
@@ -75,19 +64,19 @@
 					</div>
 				</div>
 
-				<label>Your Address</label>
-				<input class="bg-dark"type="text" name="address" placeholder="Country, State, City, Street" pattern="^([\u0621-\u064A0-9\-, ]{3,})|([a-zA-Z0-9\-, ]{3,})+$" title="your address must be in English or Arabic characters only and at least 3 characters" autocomplete="on" >
+				<label class = "text-light">Your Address</label>
+				<input class=""type="text" name="address" placeholder="Country, State, City, Street" pattern="^([\u0621-\u064A0-9\-, ]{3,})|([a-zA-Z0-9\-, ]{3,})+$" title="your address must be in English or Arabic characters only and at least 3 characters" autocomplete="on" >
 
-				<label>Your Phone</label>
-				<input class="bg-dark" type="text" name="phone" placeholder="+201..." pattern="^\+?\d{10,}$" title="your phone must be at least 10 digits" autocomplete="on" >
+				<label class = "text-light">Your Phone <i class="fas fa-mobile-alt text-light"></i></label>
+				<input class="" type="text" name="phone" placeholder="+201..." pattern="^\+?\d{10,}$" title="your phone must be at least 10 digits" autocomplete="on" >
 
-				<label>Your Password</label>
-				<input  class="bg-dark"type="password" name="password" placeholder="at least 8 characters" pattern="^.{8,}$" title="your password must be 8 caharacters at least" autocomplete="on" >
+				<label class = "text-light">Your Password</label>
+				<input  class=""type="password" name="password" placeholder="at least 8 characters" pattern="^.{8,}$" title="your password must be 8 caharacters at least" autocomplete="on" >
 
-				<label>Confirm Password</label>
-				<input  class="bg-dark"type="password" name="confirm-password" placeholder="the same as password" pattern="^.{8,}$" title="confirm password must match the password" autocomplete="on" >
+				<label class = "text-light">Confirm Password</label>
+				<input  class=""type="password" name="confirm-password" placeholder="the same as password" pattern="^.{8,}$" title="confirm password must match the password" autocomplete="on" >
 
-				<input class="bg-dark"type="checkbox" name="agree"title="you should agree all terms" >
+				<input class=""type="checkbox" name="agree"title="you should agree all terms" >
 				<a href="#"> I agree all terms  </a>
 
 				<input type="submit" value="Register" title="Can't Register" data-content="you should match all validation first">
